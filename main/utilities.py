@@ -1,11 +1,11 @@
 import os
-from .type import Texts, Text
+from type import Texts, Text
 
 def get_texts() -> Texts:
     texts = []
     for filename in os.listdir('data/texts'):
         with open('data/texts/' + filename, 'r') as file:
-            texts.append(Text(filename, file.read()))
+            texts.append(Text(filename=filename, content=file.read()))
     return Texts(texts=texts)
 
 def update_texts(texts: Texts):

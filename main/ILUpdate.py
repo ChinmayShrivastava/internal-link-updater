@@ -1,4 +1,4 @@
-from .type import LinksToUpdate, Texts, Text
+from type import LinksToUpdate, Texts, Text
 
 class ILUpdate:
 

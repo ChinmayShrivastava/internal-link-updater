@@ -1,6 +1,6 @@
-from .ILUpdate import ILUpdate
-from .utilities import get_texts, update_texts
-from .data.LINKS import LINKS
+from ILUpdate import ILUpdate
+from utilities import get_texts, update_texts
+from data.LINKS import LINKS
 
 def main():
     texts = get_texts()
